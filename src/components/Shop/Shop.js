@@ -20,7 +20,7 @@ const Shop = () => {
         for(const id in storedCart) {
             // step 2: get the product using id
             const addedProduct = products.find(product => product.id ===id)
-            if(addedProduct) {
+            if(addedProduct) { 
                 // step 3: get quentity of the product
                 const quantity = storedCart[id];
                 addedProduct.quantity = quantity;
